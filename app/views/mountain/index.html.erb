@@ -1,0 +1,11 @@
+<%= image_tag("http://api.wunderground.com/api/#{ENV['WEATHER_API']}/animatedradar/q/CO/Frisco.gif?newmaps=1&timelabel=1&timelabel.y=10&num=5&delay=50", :id =>"radar")%>
+<section>
+    <a style="color: white; text-decoration: none;" href="/"><h1>SkiDash</h1></a>
+    <div id="content" style="display: block; margin-top: 125px;">
+
+    </div>
+
+  </section>
+
+
+<%= render partial: "/shared/background_video" %>

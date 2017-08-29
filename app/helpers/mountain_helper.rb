@@ -1,0 +1,2 @@
+module MountainHelper
+end

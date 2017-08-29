@@ -102,13 +102,24 @@ min-height: 800px;
 }
 
 
-#submit-button {
-padding-top: 65px;
+select#mountainSelect{
+  height: 40px;
+  width: 170px;
+  font-size: 18px;
+  background-color: skyblue;
+  color: white;
 }
+
 
 #mountain-form {
 background-color: #337ab7;
 color: white;
+height: 50px;
+width: 200px;
+font-size: 18px;
+margin-right: 20px;
+
+
 }
 
 @keyframes slidy {

@@ -16,7 +16,19 @@ app.factory("Mountain", function($http, $q) {
 
       get_forecast: function( mountain) {
 
-        console.log('GETWEATHER', mountain)
+        $http({
+          url: urlBase + '/'+ 'forecast', 
+          method: "GET",
+          params: {mountain: mountain.zip_code}
+        }).then(function(response) {
+
+          deferred.resolve(response['data']['forecastday'])
+
+        })
+        .catch(function(response) {
+          deferred.reject(response)
+        });
+        return deferred.promise;
       }
 
       

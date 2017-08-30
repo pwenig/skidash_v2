@@ -8,7 +8,12 @@ app.controller('MountainCtrl', ['$scope', 'Mountain', function($scope, Mountain)
 
   $scope.selected = function() {
     
-    Mountain.get_forecast($scope.selected_mountain);
+    Mountain.get_forecast($scope.selected_mountain).then(function(forecasts) {
+
+      $scope.forecasts = forecasts;
+      console.log('$scope.forecasts', $scope.forecasts)
+
+    });
 
   };
 

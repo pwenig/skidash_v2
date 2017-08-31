@@ -1,10 +1,11 @@
 app.factory("Mountain", function($http, $q) {
 
     var urlBase = '/mountains';
-    var deferred = $q.defer();
 
     return {
+      
       get: function() {
+          var deferred = $q.defer();
           $http.get(urlBase).then(function(response){
              deferred.resolve(response.data);
           })
@@ -14,19 +15,21 @@ app.factory("Mountain", function($http, $q) {
           return deferred.promise;
       },
 
-      get_forecast: function( mountain) {
-
+      get_forecast: function( mountain ) {
+        var deferred = $q.defer();
         $http({
           url: urlBase + '/'+ 'forecast', 
           method: "GET",
           params: {mountain: mountain.zip_code}
         }).then(function(response) {
 
-          deferred.resolve(response['data']['forecastday'])
+          deferred.resolve(response['data'])
 
         })
         .catch(function(response) {
+
           deferred.reject(response)
+          
         });
         return deferred.promise;
       }

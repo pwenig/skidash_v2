@@ -104,10 +104,25 @@ min-height: 800px;
 
 select#mountainSelect{
   height: 40px;
-  width: 170px;
-  font-size: 18px;
+  width: 190px;
+  font-size: 22px;
   background-color: skyblue;
   color: white;
+}
+
+.forecast{
+
+  margin-right: 200px;
+
+  ul {
+    list-style: none;
+    width: 50%;
+    margin: auto;
+  }
+  li {
+    font-size: 24px;
+
+  }
 }
 
 

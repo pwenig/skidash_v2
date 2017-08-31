@@ -1,6 +1,6 @@
 class MountainsController < ApplicationController
 
-  require 'httparty'
+  include WeatherCondition
 
   def index
     @mountains = Mountain.all
@@ -8,9 +8,13 @@ class MountainsController < ApplicationController
   end
 
   def forecast
+    weather_results = {}
     zipcode = params['mountain']
-    response = HTTParty.get("http://api.wunderground.com/api/#{ENV['WEATHER_API']}/forecast/q/#{zipcode}.json")
-    render json: response['forecast']['txt_forecast']
+
+    weather_results['forecast_response'] = WeatherCondition.get_weather('forecast', zipcode)
+    weather_results['conditions_response'] = WeatherCondition.get_weather('conditions', zipcode)
+
+    render json: weather_results
   end 
-  
+
 end

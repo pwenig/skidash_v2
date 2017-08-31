@@ -1,0 +1,19 @@
+<div class="row">
+  <section>
+
+    <div class="forecast">
+      <ul>
+        <li><img ng-src="{{current_forecast.icon_url}}"></li>
+        <li>{{ current_forecast.weather }} {{ current_forecast.temp_f }}&#176</li>
+        <li>{{current_forecast.wind_string }}</li>
+        <br>
+        <div ng-repeat="forecast in future_forecasts">
+          <li><strong>{{ forecast.title }}</strong><img ng-src="{{forecast.icon_url}}"></li>
+          <li>{{ forecast.fcttext }}</li>
+          <br>
+        </div>
+      </ul>
+  </div>
+
+  </section>
+</div>

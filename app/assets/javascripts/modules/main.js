@@ -1,1 +1,1 @@
-var app = angular.module("skidash", ["ngResource"]);
+var app = angular.module("skidash", ["ngResource", "templates"]);

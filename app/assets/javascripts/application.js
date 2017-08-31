@@ -13,8 +13,10 @@
 //= require rails-ujs
 //= require angular
 //= require angular-resource
+//= require angular-rails-templates
 //= require_tree ./modules
 //= require_tree ./factories
 //= require_tree ./controllers
 //= require_tree ./directives
+//= require_tree ./templates
 //= require_tree .

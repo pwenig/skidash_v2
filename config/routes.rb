@@ -4,6 +4,7 @@ Rails.application.routes.draw do
  resources :mountains do
   collection do
     get 'forecast'
+    get 'alert'
   end 
 
  end

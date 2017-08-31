@@ -1,9 +1,18 @@
 <div class="traffic-container">
-  <section>
-    Traffic Alerts
+  <section class="traffic">
+    <h2>Traffic Alerts</h2>
+    <div ng-repeat="alert in alerts">
+      <p class="title">{{alert['Title']}}</p>
+      <p class="title">{{alert['LocationDescription']}}</p>
+      <button class="description" ng-click="active=!active">Show/Hide Message</button>
+      <br>
+      <p ng-class="{'active': active}">{{alert['Description']}}</p>
+      <p class="title">****</p>
+    </div>
   </section>
 
-  <section>
+  <section class="traffic">
     Traffic Cams
+    <img ng-src="">
   </section>
 </div>

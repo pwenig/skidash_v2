@@ -72,10 +72,72 @@ img#radar {
   display: flex;
   flex-direction: row;
 
-  section {
+  section.traffic {
     width: 50%;
     margin: 20px;
+
+    button.description {
+      height: 39px;
+      width: 133px;
+      border: 2px solid;
+      border-radius: 25px;
+      background-color: skyblue;
+      font-size: 12px;
+    }
+
+    p.title {
+      display: block;
+      font-size: 20px;
+    }
+    p {
+      display: none;
+    }
+
+    p.active {
+      display: block;
+    }
+
   }
+}
+
+.current-condition-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  section.current-condition {
+
+    ul {
+      list-style: none;
+    }
+    li {
+      font-size: 18px;
+    }
+    padding: 0;
+    width: 450px;
+  }
+}
+
+.forecast-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  section.forecast {
+    width: 217px;
+    height: 275px;
+    margin: 35px;
+
+    ul {
+      list-style: none;
+    }
+
+    li.forecast {
+      font-size: 18px;
+    }
+  }
+
+
 }
 
 .camera {
@@ -121,20 +183,20 @@ select#mountainSelect{
   color: white;
 }
 
-.forecast{
+// .forecast{
 
-  margin-right: 200px;
+//   margin-right: 200px;
 
-  ul {
-    list-style: none;
-    width: 50%;
-    margin: auto;
-  }
-  li {
-    font-size: 24px;
+//   ul {
+//     list-style: none;
+//     width: 50%;
+//     margin: auto;
+//   }
+//   li {
+//     font-size: 24px;
 
-  }
-}
+//   }
+// }
 
 
 #mountain-form {

@@ -1,6 +1,7 @@
 class MountainsController < ApplicationController
 
   include WeatherCondition
+  include TrafficAlert
 
   def index
     @mountains = Mountain.all
@@ -15,6 +16,10 @@ class MountainsController < ApplicationController
     weather_results['conditions_response'] = WeatherCondition.get_weather('conditions', zipcode)
 
     render json: weather_results
+  end 
+
+  def alert
+    render json: TrafficAlert.get_alerts
   end 
 
 end

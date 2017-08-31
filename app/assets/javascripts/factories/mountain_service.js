@@ -22,16 +22,32 @@ app.factory("Mountain", function($http, $q) {
           method: "GET",
           params: {mountain: mountain.zip_code}
         }).then(function(response) {
-
           deferred.resolve(response['data'])
-
         })
         .catch(function(response) {
 
           deferred.reject(response)
-          
+
         });
         return deferred.promise;
+      },
+
+      get_traffic_alerts: function() {
+        var deferred = $q.defer();
+        $http({
+          url: urlBase + '/' + 'alert',
+          method: 'GET'
+        }).then(function(response) {
+          
+          deferred.resolve(response['data'])
+
+        })
+        .catch(function(response) {
+          deferred.reject(response)
+        });
+        return deferred.promise;
+
+       
       }
 
       

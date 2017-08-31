@@ -1,19 +1,22 @@
-<div class="row">
-  <section>
-
-    <div class="forecast">
-      <ul>
-        <li><img ng-src="{{current_forecast.icon_url}}"></li>
-        <li>{{ current_forecast.weather }} {{ current_forecast.temp_f }}&#176</li>
-        <li>{{current_forecast.wind_string }}</li>
-        <br>
-        <div ng-repeat="forecast in future_forecasts">
-          <li><strong>{{ forecast.title }}</strong><img ng-src="{{forecast.icon_url}}"></li>
-          <li>{{ forecast.fcttext }}</li>
-          <br>
-        </div>
-      </ul>
+<div class="current-condition-container">
+  <section class="current-condition">
+    <ul>
+      <li><h3>{{ current_forecast.observation_time }}</h3></li>
+      <li><img ng-src="{{current_forecast.icon_url}}"></li>
+      <li>{{ current_forecast.weather }} {{ current_forecast.temp_f }}&#176</li>
+      <li>Wind: {{current_forecast.wind_string }}</li>
+    </ul>
+  </section>
   </div>
 
-  </section>
+<div class="forecast-container">
+  <div ng-repeat="forecast in future_forecasts">
+    <section class="forecast">
+      <ul>
+        <li><img ng-src="{{forecast.icon_url}}"></li>
+        <li><h3>{{ forecast.title }}</h3></li>
+        <li class="forecast">{{ forecast.fcttext }}</li>
+      </ul>
+    </section>
+  </div>
 </div>

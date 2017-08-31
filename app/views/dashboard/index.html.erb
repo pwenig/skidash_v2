@@ -1,17 +1,21 @@
 <%= image_tag("http://api.wunderground.com/api/#{ENV['WEATHER_API']}/animatedradar/q/CO/Frisco.gif?newmaps=1&timelabel=1&timelabel.y=10&num=5&delay=50", :id =>"radar")%>
 <div ng-controller="MountainCtrl">
-<section>
-<a style="color: white; text-decoration: none;" href="/"><h1>SkiDash</h1></a>
+  <div class="container">
+    <div class="row">
+      <section>
+        <a style="color: white; text-decoration: none;" href="/"><h1>SkiDash</h1></a>
+          <form name="mountainForm">
+            <select name="mountainSelect" id="mountainSelect" ng-model="selected_mountain" ng-change="selected()" ng-options="mountain.name for mountain in mountains">
+              <option value="">Select Mountain</option>
+            </select>
+          </form>
+        </section>
+    </div>
+  </div>
+    
+  <forecast data=forecast ng-if="display_forecast"></forecast>
 
-  <form name="mountainForm">
-    <select name="mountainSelect" id="mountainSelect" ng-model="selected_mountain" ng-change="selected()" ng-options="mountain.name for mountain in mountains">
-      <option value="">Select Mountain</option>
-    </select>
-  </form>
-  </section>
-  
-<forecast data=forecast ng-if="display_forecast"></forecast>
-
+  <travelalert></travelalert>
 
 </div>
 

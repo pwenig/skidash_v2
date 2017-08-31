@@ -1,37 +1,37 @@
-.row-table.row-table-xs {
-  display: table !important;
-}
+// .row-table.row-table-xs {
+//   display: table !important;
+// }
 
-.row-table.row-table-xs > [class*="col-"] {
-  float: none !important;
-  display: table-cell !important;
-  vertical-align: middle;
-}
+// .row-table.row-table-xs > [class*="col-"] {
+//   float: none !important;
+//   display: table-cell !important;
+//   vertical-align: middle;
+// }
 
-.row-table.row-table-xs > [class*="col-"].td-top {
-  vertical-align: top !important;
-}
+// .row-table.row-table-xs > [class*="col-"].td-top {
+//   vertical-align: top !important;
+// }
 
-.row-table.row-table-xs > [class*="col-"].td-bottom {
-  vertical-align: bottom !important;
-}
+// .row-table.row-table-xs > [class*="col-"].td-bottom {
+//   vertical-align: bottom !important;
+// }
 
-@media (min-width: 768px) {
-  .row-table {
-      display: table !important;
-  }
-  .row-table > [class*="col-"] {
-      float: none !important;
-      display: table-cell !important;
-      vertical-align: middle;
-  }
-  .row-table > [class*="col-"].td-top {
-      vertical-align: top !important;
-  }
-  .row-table > [class*="col-"].td-bottom {
-      vertical-align: bottom !important;
-  }
-}
+// @media (min-width: 768px) {
+//   .row-table {
+//       display: table !important;
+//   }
+//   .row-table > [class*="col-"] {
+//       float: none !important;
+//       display: table-cell !important;
+//       vertical-align: middle;
+//   }
+//   .row-table > [class*="col-"].td-top {
+//       vertical-align: top !important;
+//   }
+//   .row-table > [class*="col-"].td-bottom {
+//       vertical-align: bottom !important;
+//   }
+// }
 
 
 h1 {
@@ -65,6 +65,17 @@ img#radar {
   border-color: black;
   margin-top: 10px;
   float: right;
+}
+
+.traffic-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  section {
+    width: 50%;
+    margin: 20px;
+  }
 }
 
 .camera {
@@ -155,13 +166,13 @@ body { margin: 0; }
 div#slider { overflow: hidden; }
 div#slider figure img { width: 20%; float: left; }
 div#slider figure {
-position: relative;
-width: 500%;
-margin: 0;
-left: 0;
-text-align: left;
-font-size: 0;
-animation: 20s slidy infinite;
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite;
 }
 
 #alerts {

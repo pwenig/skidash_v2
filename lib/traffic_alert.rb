@@ -2,7 +2,7 @@ module TrafficAlert
 
   def self.get_alerts
     auth = {:username => "#{ENV['CDOT_USERNAME']}", :password => "#{ENV['CDOT_PASSWORD']}"}
-    response =  HTTParty.get("https://data.cotrip.org/xml/alerts.xml", :basic_auth => auth)
+    response =  HTTParty.get("#{ENV['CDOT_URL']}", :basic_auth => auth)
     alerts = get_ski_alerts(response)
    
   end 

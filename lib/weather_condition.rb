@@ -2,7 +2,7 @@ module WeatherCondition
 
   def self.get_weather(type, zipcode)
 
-    response = HTTParty.get("http://api.wunderground.com/api/#{ENV['WEATHER_API']}/#{type}/q/#{zipcode}.json")
+    response = HTTParty.get("#{ENV['WEATHER_URL']}/#{type}/q/#{zipcode}.json")
 
     if type == 'forecast'
       formatted_response = format_forecast(response)

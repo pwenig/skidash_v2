@@ -1,4 +1,4 @@
-<%= image_tag("http://api.wunderground.com/api/#{ENV['WEATHER_API']}/animatedradar/q/CO/Frisco.gif?newmaps=1&timelabel=1&timelabel.y=10&num=5&delay=50", :id =>"radar")%>
+<%= image_tag("#{ENV['RADAR_URL']}", :id =>"radar")%>
 <div ng-controller="MountainCtrl">
   <div class="container">
     <div class="row">

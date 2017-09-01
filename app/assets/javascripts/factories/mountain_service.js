@@ -48,7 +48,26 @@ app.factory("Mountain", function($http, $q) {
         return deferred.promise;
 
        
+      },
+
+      get_traffic_images: function() {
+        var deferred = $q.defer();
+        $http({
+          url: urlBase + '/' + 'images',
+          method: 'GET'
+        }).then(function(response) {
+          
+          deferred.resolve(response['data'])
+
+        })
+        .catch(function(response) {
+          deferred.reject(response)
+        });
+        return deferred.promise;
+
+       
       }
+
 
       
     }

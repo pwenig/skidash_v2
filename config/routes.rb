@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   collection do
     get 'forecast'
     get 'alert'
+    get 'images'
   end 
 
  end

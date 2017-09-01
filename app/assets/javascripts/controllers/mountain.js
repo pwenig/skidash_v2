@@ -13,6 +13,12 @@ app.controller('MountainCtrl', ['$scope', 'Mountain', function($scope, Mountain)
 
   });
 
+  Mountain.get_traffic_images().then(function(data) {
+    
+    $scope.traffic_images = data
+
+  });
+
   $scope.selected = function() {
 
     Mountain.get_forecast($scope.selected_mountain).then(function( response ) {

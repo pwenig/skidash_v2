@@ -22,4 +22,8 @@ class MountainsController < ApplicationController
     render json: TrafficAlert.get_alerts
   end 
 
+  def images 
+    render json: TrafficAlert.get_images
+  end 
+
 end

@@ -1,10 +1,11 @@
 <div class="current-condition-container">
   <section class="current-condition">
     <ul>
-      <li><h3>{{ current_forecast.observation_time }}</h3></li>
+      
       <li><img ng-src="{{current_forecast.icon_url}}"></li>
       <li>{{ current_forecast.weather }} {{ current_forecast.temp_f }}&#176</li>
       <li>Wind: {{current_forecast.wind_string }}</li>
+      <li><p>{{ current_forecast.observation_time }}</p></li>
     </ul>
   </section>
   </div>

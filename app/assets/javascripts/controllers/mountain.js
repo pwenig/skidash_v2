@@ -1,4 +1,5 @@
-app.controller('MountainCtrl', ['$scope', 'Mountain', 'Road', function($scope, Mountain, Road) {
+angular.module('skidash')
+  .controller('MountainCtrl', ['$scope', 'Mountain', 'Road', function($scope, Mountain, Road) {
 
   Mountain.get().then(function(data) {
 

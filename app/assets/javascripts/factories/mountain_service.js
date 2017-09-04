@@ -32,11 +32,12 @@ app.factory("Mountain", function($http, $q) {
         return deferred.promise;
       },
 
-      get_traffic_alerts: function() {
+      get_traffic_alerts: function(road) {
         var deferred = $q.defer();
         $http({
           url: urlBase + '/' + 'alert',
-          method: 'GET'
+          method: 'GET',
+          params: road
         }).then(function(response) {
           
           deferred.resolve(response['data'])
@@ -50,11 +51,12 @@ app.factory("Mountain", function($http, $q) {
        
       },
 
-      get_traffic_images: function() {
+      get_traffic_images: function(road) {
         var deferred = $q.defer();
         $http({
           url: urlBase + '/' + 'images',
-          method: 'GET'
+          method: 'GET',
+          params: road
         }).then(function(response) {
           
           deferred.resolve(response['data'])

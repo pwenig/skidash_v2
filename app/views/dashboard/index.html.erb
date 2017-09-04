@@ -6,10 +6,10 @@
       
       <img class="co-flag" ng-src="co_flag.png"></a>
         <%= image_tag("#{ENV['RADAR_URL']}", :id =>"radar")%>
-         
+         <h3>Forecasts</h3>
           <form name="mountainForm">
             <select name="mountainSelect" id="mountainSelect" ng-model="selected_mountain" ng-change="selected()" ng-options="mountain.name for mountain in mountains">
-              <option value=""> Mountain Forecast </option>
+              <option value="">Select Mountain</option>
             </select>
           </form>
         </section>
@@ -18,8 +18,9 @@
     
   <forecast data=forecast ng-if="display_forecast"></forecast>
 
-  <travelalert alerts=traffic_alerts ng-if="traffic_alerts.length > 0"></travelalert>
-  <travelcamera images=traffic_images></travelcamera>
+  <section class="traffic-header" ng-if="!traffic_alerts">CDOT Info not available</section>
+  <travelalert alerts="traffic_alerts" roads="roads" selectroad="roadSelected" ng-if="traffic_alerts.length > 0"></travelalert>
+  <travelcamera images=traffic_images ng-if="traffic_images.length > 0"></travelcamera>
 
 </div>
 

@@ -36,6 +36,7 @@ img#radar {
   section.traffic-header{
     width: 90%;
     padding: 0;
+    height: 125px;
   }
 
   section.traffic {
@@ -71,6 +72,7 @@ img#radar {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   section.camera-header {
     width: 90%;
@@ -78,15 +80,21 @@ img#radar {
   }
 
   section.camera {
-    width: 108px;
-    height: 133px;
+    width: 200px;
+    height: 200px;
     margin: 30px;
 
     p {
       font-size: 15px;
       padding: 0;
-      margin-top: -24px;
+      
 
+    }
+
+    h4 {
+      margin-top: -20px;
+      font-size: 16px;
+      
     }
   }
 }
@@ -170,8 +178,8 @@ img#radar {
 }
 
 img.camera {
-  height: 100px;
-  width: 118px;
+  height: 150px;
+  width: 180px;
 }
 
 
@@ -198,14 +206,22 @@ z-index: -1;
 min-height: 800px;
 }
 
-
-select#mountainSelect{
+select#roadSelect{
   height: 40px;
-  width: 190px;
+  width: 260px;
   font-size: 20px;
   background-color: skyblue;
   color: black;
-  margin-top: 100px;
+  height: 32px;
+  width: 150px;
+}
+
+select#mountainSelect{
+  height: 40px;
+  width: 180px;
+  font-size: 20px;
+  background-color: skyblue;
+  color: black;
 }
 
 #mountain-form {
@@ -215,11 +231,6 @@ height: 50px;
 width: 200px;
 font-size: 18px;
 margin-right: 20px;
-
-  label#mountainLabel {
-    color: red;
-  }
-
 }
 
 @keyframes slidy {

@@ -1,24 +1,17 @@
 <div class="camera-container">
   <section class="camera-header">
-    <h3>I-70 Traffic Cameras</h3>
+    <h3>Traffic Cameras</h3>
   </section>
 </div>
 
 <div class="camera-container">
-  <div ng-repeat="image in first_set">
+  <div ng-repeat="image in images">
       <section class="camera">
-        <p>{{ image['CameraName']}}</p>
+        <h4>{{ image['CameraName']}}</h4>
         <a href="{{'http://www.cotrip.org/' + image['ImageLocation']}}" target="_blank"><img class="camera" ng-src="{{'http://www.cotrip.org/' + image['ImageLocation']}}"></a>
+        <p>{{ image['ViewDescription']}}</p>
       </section>
   </div>
 </div>
 
-<div class="camera-container">
-    <div ng-repeat="image in second_set">
-      <section class="camera">
-        <p>{{ image['CameraName']}}</p>
-        <a href="{{'http://www.cotrip.org/' + image['ImageLocation']}}" target="_blank"> <img class="camera" ng-src="{{'http://www.cotrip.org/' + image['ImageLocation']}}"></a>
-      </section>
-    </div>
-  </div>
  

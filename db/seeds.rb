@@ -8,3 +8,7 @@ Mountain.create(:name => "Crested Butte", :zip_code => "81224", :mtn_image1 => "
 Mountain.create(:name => "A-Basin", :zip_code => "80435", :mtn_image1 => "http://arapahoebasin.com/ABasin/assets/images/webcams/webcam1/abasincam1.jpg", :mtn_image2 => "http://arapahoebasin.com/ABasin/assets/images/webcams/webcam5/abasincam5.jpg", :mtn_image3 => "http://arapahoebasin.com/ABasin/assets/images/webcams/webcam3/abasincam3.jpg", :terrain_url => "http://arapahoebasin.com/ABasin/snow-conditions/terrain.aspx")
 Mountain.create(:name => "Keystone", :zip_code => "80435", :mtn_image1 => "http://common.snow.com/Mtncams/summithouse.jpg", :mtn_image2 => "http://common.snow.com/mtncams/riverrun.jpg", :mtn_image3 => "http://common.snow.com/Mtncams/keystonegondola.jpg", :terrain_url => "http://www.keystoneresort.com/ski-and-snowboard/terrain-status.aspx#/Lifts")
 Mountain.create(:name => "Loveland", :zip_code => "80444", :mtn_image1 => "https://www.photosskiloveland.com/Single/chairone00001.jpg", :mtn_image2 => "https://www.photosskiloveland.com/valley/2/200001.jpg", :mtn_image3 => "https://www.photosskiloveland.com/basin/single/Basin00001.jpg", :terrain_url => "http://skiloveland.com/trail-lift-report/")
+Road.create(:name => "I-70")
+Road.create(:name => "US 40")
+Road.create(:name => "US 285")
+Road.create(:name => "CO 93")

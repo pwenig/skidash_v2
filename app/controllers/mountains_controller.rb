@@ -19,11 +19,11 @@ class MountainsController < ApplicationController
   end 
 
   def alert
-    render json: TrafficAlert.get_alerts
+    render json: TrafficAlert.get_alerts(params['name'])
   end 
 
   def images 
-    render json: TrafficAlert.get_images
+    render json: TrafficAlert.get_images(params['name'])
   end 
 
 end

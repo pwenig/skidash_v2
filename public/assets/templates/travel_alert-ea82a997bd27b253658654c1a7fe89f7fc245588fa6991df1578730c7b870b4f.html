@@ -1,0 +1,24 @@
+<div class="traffic-container">
+  <section class="traffic-header">
+      
+    <h3>Traffic Alerts</h3>
+    <form name="alertForm">
+        <select name="roadSelect" id="roadSelect" ng-model="selected_road" ng-change="selected()" ng-options="road.name for road in roads track by road.name">
+          <option value="">Select Road</option>
+        </select>
+      </form>
+  </section>
+</div>
+
+<div class="traffic-container">
+    <div ng-repeat="alert in alerts">
+      <section class="traffic">
+        <p class="title">{{alert['RoadName']}} {{alert['Title']}}</p>
+        <p class="title">{{alert['LocationDescription']}}</p>
+        <button class="description" ng-click="active=!active">Show/Hide Message</button>
+        <p ng-class="{'active': active}">{{alert['Description']}}</p>
+        <p class="title">****</p>
+      </section>
+    </div>
+    
+</div>

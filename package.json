@@ -9,6 +9,9 @@
     "preinstall": "npm install -g node-gyp",
     "heroku-postbuild": "ng build"
   },
+  "engines": {
+    "node": "8.4.0"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "2.0.0-rc.5",

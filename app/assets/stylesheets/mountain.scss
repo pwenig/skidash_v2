@@ -301,6 +301,10 @@ color: white;
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+//  h1 {
+//    color: red;
+
+//  }
 .speed-segment {
   font-size: 11px;
 }
@@ -309,6 +313,22 @@ color: white;
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+
+  h1 {
+    color: yellow;
+    font-size: 33px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+
+  select#mountainSelect{
+    height: 60px;
+    width: 210px;
+    font-size: 20px;
+  }
+
+
 .speed-segment {
   font-size: 10px;
 }
@@ -324,16 +344,16 @@ color: white;
   height: 150px;
   margin-top: 24px;
 }
-h1 {
-  font-size: 60px;
-}
+// h1 {
+//   font-size: 60px;
+// }
 
 
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-
+  
 }
 
 /* Portrait phones and smaller */

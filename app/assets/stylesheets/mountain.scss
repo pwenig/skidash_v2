@@ -215,6 +215,7 @@ select#roadSelect{
   color: black;
   height: 32px;
   width: 150px;
+  text-align-last: center;
 }
 
 select#mountainSelect{
@@ -223,6 +224,7 @@ select#mountainSelect{
   font-size: 20px;
   background-color: skyblue;
   color: black;
+  text-align-last: center;
 }
 
 #mountain-form {
@@ -301,10 +303,7 @@ color: white;
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-//  h1 {
-//    color: red;
 
-//  }
 .speed-segment {
   font-size: 11px;
 }
@@ -323,10 +322,27 @@ color: white;
   }
 
   select#mountainSelect{
-    height: 60px;
-    width: 210px;
-    font-size: 20px;
+    height: 80px;
+    width: 220px;
+    font-size: 28px;
   }
+
+  .traffic-container {
+
+    section.traffic-header{
+      height: 200px;
+    }
+
+  }
+
+  select#roadSelect{
+    height: 60px;
+    width: 220px;
+    font-size: 28px;
+    
+  }
+  
+  
 
 
 .speed-segment {

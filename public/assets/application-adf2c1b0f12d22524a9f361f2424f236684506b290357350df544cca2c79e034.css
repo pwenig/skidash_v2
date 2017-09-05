@@ -1,0 +1,384 @@
+/* line 1, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+h1 {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* line 5, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+section {
+  padding: 2em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: medium;
+  margin: 2em auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-align: center;
+}
+
+/* line 18, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+img#radar {
+  height: 200px;
+  width: 225px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  margin-top: -18px;
+  float: right;
+  margin-right: -9px;
+}
+
+/* line 30, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.traffic-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* line 36, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.traffic-container section.traffic-header {
+  width: 90%;
+  padding: 0;
+  height: 125px;
+}
+/* line 42, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.traffic-container section.traffic {
+  width: 200px;
+  min-height: 320px;
+  margin: 35px;
+}
+/* line 47, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.traffic-container section.traffic button.description {
+  height: 39px;
+  width: 133px;
+  border: 2px solid;
+  border-radius: 25px;
+  background-color: skyblue;
+  font-size: 12px;
+}
+/* line 56, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.traffic-container section.traffic p.title {
+  display: block;
+  font-size: 20px;
+}
+/* line 60, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.traffic-container section.traffic p {
+  display: none;
+}
+/* line 64, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.traffic-container section.traffic p.active {
+  display: block;
+}
+
+/* line 71, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.camera-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* line 77, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.camera-container section.camera-header {
+  width: 90%;
+  padding: 0;
+}
+/* line 82, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.camera-container section.camera {
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+}
+/* line 87, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.camera-container section.camera p {
+  font-size: 15px;
+  padding: 0;
+}
+/* line 94, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.camera-container section.camera h4 {
+  margin-top: -20px;
+  font-size: 16px;
+}
+
+/* line 102, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.current-condition-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/* line 107, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.current-condition-container section.current-condition {
+  padding: 0;
+  width: 70%;
+  min-height: 170px;
+}
+/* line 109, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.current-condition-container section.current-condition ul {
+  list-style: none;
+}
+/* line 112, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.current-condition-container section.current-condition li {
+  font-size: 18px;
+}
+/* line 114, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.current-condition-container section.current-condition li p {
+  font-size: 12px;
+}
+
+/* line 124, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/* line 129, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.header-container .row {
+  width: 100%;
+}
+/* line 134, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.header-container section.header {
+  height: 200px;
+}
+/* line 137, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.header-container section.header h1 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+/* line 143, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.header-container section.header a.header {
+  color: white;
+  text-decoration: none;
+  float: left;
+}
+/* line 149, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.header-container section.header img.co-flag {
+  height: 100px;
+  width: 116px;
+  float: left;
+}
+
+/* line 158, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.forecast-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/* line 163, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.forecast-container section.forecast {
+  width: 217px;
+  height: 275px;
+  margin: 35px;
+}
+/* line 168, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.forecast-container section.forecast ul {
+  list-style: none;
+}
+/* line 172, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.forecast-container section.forecast li.forecast {
+  font-size: 18px;
+}
+
+/* line 180, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+img.camera {
+  height: 150px;
+  width: 180px;
+}
+
+/* line 186, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+h2 {
+  text-align: center;
+}
+
+/* line 190, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+h3 {
+  text-align: center;
+}
+
+/* line 194, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+/* line 205, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+#forecasts {
+  min-height: 800px;
+}
+
+/* line 209, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+select#roadSelect {
+  height: 40px;
+  width: 260px;
+  font-size: 20px;
+  background-color: skyblue;
+  color: black;
+  height: 32px;
+  width: 150px;
+}
+
+/* line 219, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+select#mountainSelect {
+  height: 40px;
+  width: 180px;
+  font-size: 20px;
+  background-color: skyblue;
+  color: black;
+}
+
+/* line 227, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+#mountain-form {
+  background-color: #337ab7;
+  color: white;
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+/* line 250, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+body {
+  margin: 0;
+}
+
+/* line 251, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+div#slider {
+  overflow: hidden;
+}
+
+/* line 252, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+div#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+/* line 253, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite;
+}
+
+/* line 263, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+#alerts {
+  min-height: 420px;
+}
+
+/* line 267, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+#speeds {
+  min-height: 375px;
+}
+/* line 269, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+#speeds ul {
+  list-style-type: none;
+  text-align: left;
+  font-size: 17px;
+}
+
+/* line 277, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+#traffic-only {
+  display: none;
+}
+
+/* line 281, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.mph-speed {
+  float: right;
+  color: black;
+  font-size: 16px;
+  margin-right: 80px;
+}
+
+/* line 288, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+.speed-segment {
+  color: white;
+}
+
+/* Large desktops and laptops */
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 303, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+  .speed-segment {
+    font-size: 11px;
+  }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 311, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+  .speed-segment {
+    font-size: 10px;
+  }
+
+  /* line 314, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+  .mph-speed {
+    font-size: 10px;
+    float: none;
+  }
+
+  /* line 319, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+  #mountain-form {
+    background-color: #337ab7;
+    color: white;
+    font-size: 20px;
+    height: 150px;
+    margin-top: 24px;
+  }
+
+  /* line 326, /Users/paulwenig/Desktop/Personal/skidash_v2/app/assets/stylesheets/mountain.scss */
+  h1 {
+    font-size: 60px;
+  }
+}
+/* Landscape phones and portrait tablets */
+/* Portrait phones and smaller */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */

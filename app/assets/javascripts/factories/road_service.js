@@ -1,4 +1,4 @@
-app.factory("Road", [ "$http", "$q", function($http, $q) {
+app.factory('Road', [ '$http', '$q', function($http, $q) {
 
   var urlBase = '/roads';
 

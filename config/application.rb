@@ -9,7 +9,8 @@ Bundler.require(*Rails.groups)
 module SkidashV2
   class Application < Rails::Application
     config.autoload_paths += %W(#{config.root}/lib)
-    config.assets.initialize_on_precompile = false
+    config.assets.paths << Rails.root.join("vendor","assets","bower_components")
+    config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff|woff2)$)
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
     config.before_configuration do

@@ -16,6 +16,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'angularjs-rails'
 gem 'angular-rails-templates'
 gem 'bower-rails', "~> 0.11.0"
+gem "foreman"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -43,6 +44,13 @@ end
 group :production do
   gem 'pg'
 end
+
+group :production, :staging do
+  gem "rails_12factor"
+  gem "rails_stdout_logging"
+  gem "rails_serve_static_assets"
+end
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.

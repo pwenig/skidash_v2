@@ -15,6 +15,7 @@ gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'angularjs-rails'
 gem 'angular-rails-templates'
+gem 'bower-rails', "~> 0.11.0"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

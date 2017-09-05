@@ -47,6 +47,7 @@ GEM
     angularjs-rails (1.6.2)
     arel (8.0.0)
     bindex (0.5.0)
+    bower-rails (0.11.0)
     builder (3.2.3)
     byebug (9.1.0)
     capybara (2.15.1)
@@ -194,6 +195,7 @@ PLATFORMS
 DEPENDENCIES
   angular-rails-templates
   angularjs-rails
+  bower-rails (~> 0.11.0)
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)

@@ -340,9 +340,18 @@ color: white;
     section.forecast {
       width: 311px;
       height: 355px;
-      font-size: 20px;
+      font-size: 38px;
     }
   }
+
+  .current-condition-container {
+    
+        section.current-condition {
+          width: 311px;
+          height: 355px;
+          font-size: 38px;
+        }
+      }
 
   select#roadSelect{
     height: 60px;

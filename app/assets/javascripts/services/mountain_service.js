@@ -1,5 +1,9 @@
 angular.module('skidash')
-.service('Mountain', ['$http', '$q', function($http, $q) {
+.service('Mountain', Mountain)
+
+Mountain.$inject = ['$http', '$q'];
+
+function Mountain ($http, $q) {
 
     var urlBase = '/mountains';
 
@@ -75,4 +79,4 @@ angular.module('skidash')
       
     }
   
-  }]);
+  };

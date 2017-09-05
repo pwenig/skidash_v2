@@ -159,9 +159,10 @@ img#radar {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   section.forecast {
-    width: 217px;
+    width: 200px;
     height: 275px;
     margin: 35px;
 

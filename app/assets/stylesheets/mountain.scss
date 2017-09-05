@@ -323,16 +323,25 @@ color: white;
 
   select#mountainSelect{
     height: 80px;
-    width: 220px;
+    width: 295px;
     font-size: 28px;
   }
 
   .traffic-container {
 
     section.traffic-header{
-      height: 200px;
+      height: 250px;
     }
 
+  }
+
+  .forecast-container {
+
+    section.forecast {
+      width: 311px;
+      height: 355px;
+      font-size: 20px;
+    }
   }
 
   select#roadSelect{

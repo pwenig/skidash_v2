@@ -1,5 +1,9 @@
 angular.module('skidash')
-.controller('MountainCtrl', ['$scope', 'Mountain', 'Road', function($scope, Mountain, Road) {
+.controller('MountainCtrl', MountainCtrl);
+
+MountainCtrl.$inject = ['$scope', 'Mountain', 'Road'];
+
+function MountainCtrl ($scope, Mountain, Road) {
 
   Mountain.get().then(function(data) {
 
@@ -57,7 +61,7 @@ angular.module('skidash')
   };
 
 
-}]);
+}
 
 
 

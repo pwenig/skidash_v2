@@ -1,4 +1,4 @@
-app.factory('Mountain', ['$http', '$q', function($http, $q) {
+app.service('Mountain', ['$http', '$q', function($http, $q) {
 
     var urlBase = '/mountains';
 

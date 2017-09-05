@@ -15,7 +15,7 @@
 //= require angular-resource
 //= require angular-rails-templates
 //= require_tree ./modules
-//= require_tree ./factories
+//= require_tree ./services
 //= require_tree ./controllers
 //= require_tree ./directives
 //= require_tree ./templates

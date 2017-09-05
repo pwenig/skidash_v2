@@ -1,4 +1,5 @@
-app.service('Mountain', ['$http', '$q', function($http, $q) {
+angular.module('skidash')
+.service('Mountain', ['$http', '$q', function($http, $q) {
 
     var urlBase = '/mountains';
 

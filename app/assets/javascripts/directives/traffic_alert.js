@@ -1,4 +1,5 @@
-app.directive('travelalert', function() {
+angular.module('skidash')
+.directive('travelalert', function() {
   
   return {
     restrict: 'E',

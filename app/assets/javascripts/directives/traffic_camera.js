@@ -1,4 +1,5 @@
-app.directive('travelcamera', function() {
+angular.module('skidash')
+.directive('travelcamera', function() {
   
   return {
     restrict: 'E',

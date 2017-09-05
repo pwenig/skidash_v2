@@ -1,4 +1,5 @@
-app.directive('forecast', function() {
+angular.module('skidash')
+.directive('forecast', function() {
 
   return {
     restrict: 'E',

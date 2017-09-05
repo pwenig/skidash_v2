@@ -1,4 +1,4 @@
-app.factory("Mountain", function($http, $q) {
+app.factory("Mountain", ['$http', '$q', function($http, $q) {
 
     var urlBase = '/mountains';
 
@@ -74,4 +74,4 @@ app.factory("Mountain", function($http, $q) {
       
     }
   
-  });
+  }]);

@@ -19,7 +19,7 @@
   <forecast data=forecast ng-if="display_forecast"></forecast>
 
   <section class="traffic-header" ng-if="!traffic_alerts">CDOT Info not available</section>
-  <travelalert alerts="traffic_alerts" roads="roads" selectroad="roadSelected" ng-if="traffic_alerts.length > 0"></travelalert>
+  <travelalert alerts="traffic_alerts" roads="roads" speeds="road_speeds" selectroad="roadSelected" ng-if="traffic_alerts.length > 0"></travelalert>
   <travelcamera images=traffic_images ng-if="traffic_images.length > 0"></travelcamera>
 
 </div>

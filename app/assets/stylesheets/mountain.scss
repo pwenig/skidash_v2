@@ -24,6 +24,53 @@ img#radar {
   margin-right: -9px;
 }
 
+.speed-container {
+  width: 100%;
+
+  section.speed-header {
+    width: 90%;
+    height: auto;
+
+    .slowdown-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .slow-segment {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin: 30px;
+        background-color: green;
+
+        &.slow-down {
+          background-color: yellow;
+        }
+
+        &.stopped {
+          background-color: red;
+        }
+
+        p {
+          color: black;
+          padding: 8px;
+        }
+
+        p.speed-direction {
+          font-size: 17px;
+          font-weight: 700;
+        }
+
+
+    }
+
+    }
+    
+
+  }
+}
+
 .traffic-container {
   width: 100%;
   display: flex;
@@ -331,6 +378,22 @@ color: white;
 
   }
 
+  .speed-container {
+  
+    section.speed-header {
+      height: auto;
+
+      .slowdown-container {
+        .slow-segment {
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+
   .forecast-container {
     section.forecast {
       width: 345px;
@@ -346,7 +409,6 @@ color: white;
   }
 
   .traffic-container {
-
     section.traffic {
       width: 800px;
       height: auto;

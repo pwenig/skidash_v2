@@ -1,6 +1,5 @@
 <div class="traffic-container">
   <section class="traffic-header">
-      
     <h3>Traffic Alerts</h3>
     <form name="alertForm">
         <select name="roadSelect" id="roadSelect" ng-model="selected_road" ng-change="selected()" ng-options="road.name for road in roads track by road.name">
@@ -9,6 +8,26 @@
       </form>
   </section>
 </div>
+
+<div class="speed-container" ng-if="selected_road.name == 'I-70' && road_speeds.length > 0 ">
+  <section class="speed-header">
+    <h3>I-70 Slow Sections</h3>
+    
+    <div class="slowdown-container">
+      <div ng-repeat="speed in road_speeds">
+          <div ng-class="checkspeed(speed)">
+          <p>{{ speed['AverageSpeed'] }}/mph</p>
+          <p class="speed-direction">{{ speed['Direction'] }}: {{ speed['SegmentName']}}</p>
+              
+          </div>
+          
+      </div>
+      <div ng-if="road_speeds.length == 0">No Data-- FIX THIS</div>
+    </div>
+
+  </section>
+</div>
+
 
 <div class="traffic-container">
     <div ng-repeat="alert in alerts">

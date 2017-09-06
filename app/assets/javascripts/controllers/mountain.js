@@ -18,6 +18,7 @@ function MountainCtrl ($scope, Mountain, Road) {
     road_default = $scope.roads[0];
     $scope.get_alerts(road_default);
     $scope.get_images(road_default);
+    $scope.get_speeds(road_default);
 
   });
   
@@ -41,7 +42,7 @@ function MountainCtrl ($scope, Mountain, Road) {
 
   $scope.get_alerts = function(road) {
 
-    Mountain.get_traffic_alerts(road).then(function(data) {
+    Road.get_traffic_alerts(road).then(function(data) {
       
       $scope.traffic_alerts = data;
   
@@ -52,10 +53,20 @@ function MountainCtrl ($scope, Mountain, Road) {
 
   $scope.get_images = function(road) {
 
-    Mountain.get_traffic_images(road).then(function(data) {
+    Road.get_traffic_images(road).then(function(data) {
       
-      $scope.traffic_images = data
+      $scope.traffic_images = data;
   
+    });
+
+  };
+
+  $scope.get_speeds = function(road) {
+
+    Road.get_traffic_speeds(road).then(function(data) {
+
+      $scope.road_speeds = data;
+
     });
 
   };

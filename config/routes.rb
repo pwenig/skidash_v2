@@ -4,13 +4,15 @@ Rails.application.routes.draw do
  resources :mountains do
   collection do
     get 'forecast'
-    get 'alert'
-    get 'images'
   end 
  end
 
- resources :roads, only: [:index]
+ resources :roads, only: [:index] do
+  collection do
+    get 'alert'
+    get 'images'
+    get 'speeds'
+  end 
+ end 
 
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -336,29 +336,48 @@ color: white;
   }
 
   .forecast-container {
-
     section.forecast {
-      width: 311px;
-      height: 355px;
-    }
-    li {
-      font-size: 28px;
+      width: 345px;
+      height: auto;
 
-      .forecast {
-        font-size: 26px;
+      li.forecast {
+        font-size: 36px;
       }
+      
     }
+   
   }
+
+  .traffic-container {
+
+    section.traffic {
+      width: 800px;
+      height: auto;
+
+      p.title {
+        font-size: 36px;
+      }
+  
+      p.active {
+        font-size: 24px;
+      }
+
+    }
+    
+  }
+
 
   .current-condition-container {
     
     section.current-condition {
-      width: 311px;
-      height: 355px;
+      width: 675px;
+      height: 300px;
       li {
-        font-size: 22px;
-        p {
-          font-size: 20px;
+        font-size: 36px;
+
+        &.forecast-time {
+          font-size: 30px;
+          margin-top: 30px;
         }
       }
       

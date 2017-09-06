@@ -2,5 +2,5 @@ SkiDash is a dashboard for Colorado ski conditions. It displays weather conditio
 
 
 
-
+https://skidash-v2.herokuapp.com/
 

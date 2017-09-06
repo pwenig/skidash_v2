@@ -308,7 +308,7 @@ color: white;
 }
 
 /* Portrait tablets and small desktops */
-@media (min-width: 320px) and (max-width: 1025px) {
+@media only screen and (min-width: 320px) and (max-width: 1025px) {
 
   h1 {
     font-size: 33px;

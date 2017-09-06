@@ -339,6 +339,7 @@ color: white;
     section.forecast {
       width: 345px;
       height: auto;
+      min-height: 165px;
 
       li.forecast {
         font-size: 36px;
@@ -354,16 +355,37 @@ color: white;
       width: 800px;
       height: auto;
 
+      button.description{
+        height: 90px;
+        width: 175px;
+        font-size: 26px;
+      }
+
+
+
       p.title {
         font-size: 36px;
       }
   
       p.active {
-        font-size: 24px;
+        font-size: 36x;
       }
 
     }
     
+  }
+
+  .camera-container {
+
+    section.camera {
+      width: 295px;
+      height: 250px;
+
+      img.camera {
+        width: 280px;
+        height: 220px;
+      }
+    }
   }
 
 

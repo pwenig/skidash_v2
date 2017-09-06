@@ -67,7 +67,7 @@ module TrafficAlert
 
     if alert_messages.count == 0
       no_alerts = {}
-      no_alerts["Title"] = "NONE"
+      no_alerts["Title"] = "No Alerts"
       no_alerts["Headline"] = ''
       no_alerts["Description"] = ''
 

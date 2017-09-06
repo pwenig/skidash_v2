@@ -15,9 +15,11 @@
       <section class="traffic">
         <p class="title">{{alert['RoadName']}} {{alert['Title']}}</p>
         <p class="title">{{alert['LocationDescription']}}</p>
-        <button class="description" ng-click="active=!active">Show/Hide Message</button>
-        <p ng-class="{'active': active}">{{alert['Description']}}</p>
-        <p class="title">****</p>
+        <div ng-if="alert['Title'] != 'No Alerts'">
+          <button class="description" ng-click="active=!active">Show/Hide Message</button>
+          <p ng-class="{'active': active}">{{alert['Description']}}</p>
+          <p class="title">****</p>
+        </div>
       </section>
     </div>
     

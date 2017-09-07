@@ -39,7 +39,7 @@ angular.module('skidash')
         if(  speed['AverageSpeed'] <= 55 && speed['AverageSpeed'] > 40  ) {
           return 'slow-segment slow-down'
 
-        } else if( speed['AverageSpeed'] < 40 ) {
+        } else if( speed['AverageSpeed'] <= 40 ) {
           return 'slow-segment stopped'
         
         } else {

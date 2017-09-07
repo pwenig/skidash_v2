@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.wunderground.com/api/74d34edfa66387c4/condition/q/80304.json
+    uri:
     body:
       encoding: US-ASCII
       string: ''

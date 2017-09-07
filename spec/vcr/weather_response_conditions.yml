@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.wunderground.com/api/74d34edfa66387c4/conditions/q/80304.json
+    uri: 
     body:
       encoding: US-ASCII
       string: ''
@@ -70,4 +70,73 @@ http_interactions:
         0\",\n\t\t\"precip_today_string\":\"0.00 in (0 mm)\",\n\t\t\"precip_today_in\":\"0.00\",\n\t\t\"precip_today_metric\":\"0\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"forecast_url\":\"http://www.wunderground.com/US/CO/Boulder.html\",\n\t\t\"history_url\":\"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KCOBOULD100\",\n\t\t\"ob_url\":\"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=40.040394,-105.276428\",\n\t\t\"nowcast\":\"\"\n\t}\n}\n"
     http_version: 
   recorded_at: Thu, 07 Sep 2017 20:58:24 GMT
+- request:
+    method: get
+    uri: https://api.wunderground.com/api/74d34edfa66387c4/conditions/q/80304.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.154'
+      Last-Modified:
+      - Thu, 07 Sep 2017 21:28:08 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 07 Sep 2017 21:28:08 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Thu, 07 Sep 2017 21:28:08 GMT
+      Content-Length:
+      - '2558'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1504819688:48157:ip-10-226-237-178; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+      - Prefs=FAVS:1|WXSN:1|PWSOBS:1|WPHO:1|PHOT:1|RADC:0|RADALL:0|HIST0:NULL|GIFT:1|PHOTOTHUMBS:50|;
+        path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"conditions\": 1\n  }\n\t}\n  ,\t\"current_observation\":
+        {\n\t\t\"image\": {\n\t\t\"url\":\"http://icons.wxug.com/graphics/wu2/logo_130x80.png\",\n\t\t\"title\":\"Weather
+        Underground\",\n\t\t\"link\":\"http://www.wunderground.com\"\n\t\t},\n\t\t\"display_location\":
+        {\n\t\t\"full\":\"Boulder, CO\",\n\t\t\"city\":\"Boulder\",\n\t\t\"state\":\"CO\",\n\t\t\"state_name\":\"Colorado\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"zip\":\"80304\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"99999\",\n\t\t\"latitude\":\"40.04000092\",\n\t\t\"longitude\":\"-105.27999878\",\n\t\t\"elevation\":\"1661.5\"\n\t\t},\n\t\t\"observation_location\":
+        {\n\t\t\"full\":\"Melody-Catalpa, Boulder, Colorado\",\n\t\t\"city\":\"Melody-Catalpa,
+        Boulder\",\n\t\t\"state\":\"Colorado\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"latitude\":\"40.040539\",\n\t\t\"longitude\":\"-105.271278\",\n\t\t\"elevation\":\"5384
+        ft\"\n\t\t},\n\t\t\"estimated\": {\n\t\t},\n\t\t\"station_id\":\"KCOBOULD161\",\n\t\t\"observation_time\":\"Last
+        Updated on September 7, 3:18 PM MDT\",\n\t\t\"observation_time_rfc822\":\"Thu,
+        07 Sep 2017 15:18:31 -0600\",\n\t\t\"observation_epoch\":\"1504819111\",\n\t\t\"local_time_rfc822\":\"Thu,
+        07 Sep 2017 15:28:08 -0600\",\n\t\t\"local_epoch\":\"1504819688\",\n\t\t\"local_tz_short\":\"MDT\",\n\t\t\"local_tz_long\":\"America/Denver\",\n\t\t\"local_tz_offset\":\"-0600\",\n\t\t\"weather\":\"Clear\",\n\t\t\"temperature_string\":\"80.8
+        F (27.1 C)\",\n\t\t\"temp_f\":80.8,\n\t\t\"temp_c\":27.1,\n\t\t\"relative_humidity\":\"30%\",\n\t\t\"wind_string\":\"Calm\",\n\t\t\"wind_dir\":\"SSE\",\n\t\t\"wind_degrees\":155,\n\t\t\"wind_mph\":0.0,\n\t\t\"wind_gust_mph\":0,\n\t\t\"wind_kph\":0,\n\t\t\"wind_gust_kph\":0,\n\t\t\"pressure_mb\":\"1014\",\n\t\t\"pressure_in\":\"29.95\",\n\t\t\"pressure_trend\":\"0\",\n\t\t\"dewpoint_string\":\"46
+        F (8 C)\",\n\t\t\"dewpoint_f\":46,\n\t\t\"dewpoint_c\":8,\n\t\t\"heat_index_string\":\"NA\",\n\t\t\"heat_index_f\":\"NA\",\n\t\t\"heat_index_c\":\"NA\",\n\t\t\"windchill_string\":\"NA\",\n\t\t\"windchill_f\":\"NA\",\n\t\t\"windchill_c\":\"NA\",\n\t\t\"feelslike_string\":\"80.8
+        F (26 C)\",\n\t\t\"feelslike_f\":\"80.8\",\n\t\t\"feelslike_c\":\"26\",\n\t\t\"visibility_mi\":\"10.0\",\n\t\t\"visibility_km\":\"16.1\",\n\t\t\"solarradiation\":\"--\",\n\t\t\"UV\":\"4\",\"precip_1hr_string\":\"0.00
+        in ( 0 mm)\",\n\t\t\"precip_1hr_in\":\"0.00\",\n\t\t\"precip_1hr_metric\":\"
+        0\",\n\t\t\"precip_today_string\":\"0.00 in (0 mm)\",\n\t\t\"precip_today_in\":\"0.00\",\n\t\t\"precip_today_metric\":\"0\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"forecast_url\":\"http://www.wunderground.com/US/CO/Boulder.html\",\n\t\t\"history_url\":\"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KCOBOULD161\",\n\t\t\"ob_url\":\"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=40.040539,-105.271278\",\n\t\t\"nowcast\":\"\"\n\t}\n}\n"
+    http_version: 
+  recorded_at: Thu, 07 Sep 2017 21:28:08 GMT
 recorded_with: VCR 2.9.0

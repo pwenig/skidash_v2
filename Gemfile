@@ -39,7 +39,14 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'pry'
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.5'
 end
+
+group :test do
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'webmock', '~> 2.1'
+  gem 'vcr'
+end 
 
 group :production do
   gem 'pg'

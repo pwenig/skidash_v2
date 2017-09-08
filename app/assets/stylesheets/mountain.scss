@@ -207,7 +207,8 @@ img#radar {
 
   section.forecast {
     width: 200px;
-    height: 275px;
+    min-height: 275px;
+    height: auto;
     margin: 35px;
 
     ul {

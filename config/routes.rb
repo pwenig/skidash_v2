@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  devise_for :users
+
+  namespace :admin do
+    resources :mountains
+    resources :roads
+
+    root to: "mountains#index"
+  end
+
  root to: 'dashboard#index'
 
  resources :mountains do

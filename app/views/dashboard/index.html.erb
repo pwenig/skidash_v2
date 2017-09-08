@@ -22,6 +22,17 @@
   <travelalert alerts="traffic_alerts" roads="roads" speeds="road_speeds" selectroad="roadSelected" ng-if="traffic_alerts.length > 0"></travelalert>
   <travelcamera images=traffic_images ng-if="traffic_images.length > 0"></travelcamera>
 
+  <div class="footer-container">
+    <div class="row">
+      <section class="footer">
+        <div class="copyright">&copy; Paul Wenig 2017</div>
+        <div class="login"><%= link_to 'Admin Login', new_user_session_path %></div>
+        
+      </section>
+    </div>
+
+  </div>
+
 </div>
 
 <%= render partial: "/shared/background_video" %>

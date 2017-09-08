@@ -17,6 +17,8 @@ gem 'angularjs-rails'
 gem 'angular-rails-templates'
 gem 'bower-rails', "~> 0.11.0"
 gem "foreman"
+gem "administrate"
+gem 'devise', '~> 4.2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

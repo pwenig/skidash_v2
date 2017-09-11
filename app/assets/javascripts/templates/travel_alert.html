@@ -17,6 +17,7 @@
       <div ng-repeat="speed in road_speeds">
           <div ng-class="checkspeed(speed)">
           <p>{{ speed['AverageSpeed'] }}/mph</p>
+         <div style="color: black">{{ speed['CalculatedDate'] | date: 'shortTime' }}</div>
           <p class="speed-direction">{{ speed['Direction'] }}: {{ speed['SegmentName']}}</p>
               
           </div>

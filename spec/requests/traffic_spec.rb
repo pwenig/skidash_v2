@@ -31,4 +31,12 @@ describe 'Traffic API' do
     expect(@speeds[0]['RoadName']).to include(road)
   end 
 
+  it 'gets road volume' do
+    VCR.use_cassette('traffic_volume', :record => :new_episodes) do
+      @volume = TrafficAlert.get_road_volume
+    end 
+    expect(@volume.present?).to be(true)
+
+  end 
+
 end 

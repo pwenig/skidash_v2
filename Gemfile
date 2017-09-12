@@ -42,6 +42,7 @@ group :development, :test do
   gem 'pry'
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.5'
+  gem 'rubocop', '~> 0.49.1', require: false
 end
 
 group :test do

@@ -63,12 +63,12 @@ img#radar {
         }
 
 
-    }
+      }
 
     }
-    
 
   }
+
 }
 
 .traffic-container {
@@ -446,11 +446,19 @@ color: white;
 
       .slowdown-container {
         .slow-segment {
-          width: 220px;
-          height: 220px;
+          width: 250px;
+          height: 250px;
+
           p {
-            font-size: 20px;
+            color: black;
+            padding: 20px;
           }
+  
+          p.speed-direction {
+            font-size: 22px;
+            padding: 0;
+          }
+
         }
       }
     }
@@ -459,9 +467,8 @@ color: white;
 
   .forecast-container {
     section.forecast {
-      width: 345px;
+      width: 800px;
       height: auto;
-      min-height: 525px;
 
       li.forecast {
         font-size: 36px;

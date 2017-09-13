@@ -1,6 +1,9 @@
 SkiDash is a dashboard for Colorado ski conditions. It displays weather conditions, weather forecasts, travel alerts and road images.
+Rails v5.1
+Ruby v2.3
+Angular v1.x
 
+API Credentials are required for running locally.
 
-
-https://skidash-v2.herokuapp.com/
+Staging: https://skidash-v2.herokuapp.com/
 

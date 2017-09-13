@@ -10,3 +10,5 @@ AllCops:
     - Gemfile
     - config/initializers/wrap_parameters.rb
     - config/puma.rb
+    - spec/spec_helper.rb
+    - spec/rails_helper.rb

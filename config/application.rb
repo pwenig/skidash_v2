@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module SkidashV2
   # Application rb
   class Application < Rails::Application
-    config.autoload_paths += %W[#{config.root}/lib]
+    config.autoload_paths += %W[#{config.root}/lib/modules]
     config.assets.paths <<
       Rails.root.join('vendor', 'assets', 'bower_components')
     config.assets.precompile << /.*.(?:eot|svg|ttf|woff|woff2)$/

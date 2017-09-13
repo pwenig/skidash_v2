@@ -1,5 +1,5 @@
+# Roads Controller
 class RoadsController < ApplicationController
-
   include TrafficAlert
 
   def index
@@ -9,15 +9,13 @@ class RoadsController < ApplicationController
 
   def alert
     render json: TrafficAlert.get_alerts(params['name'])
-  end 
+  end
 
-  def images 
+  def images
     render json: TrafficAlert.get_images(params['name'])
-  end 
+  end
 
   def speeds
     render json: TrafficAlert.get_speeds(params['name'])
-  end 
-
-
-end 
+  end
+end

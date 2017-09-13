@@ -1,27 +1,26 @@
 Rails.application.routes.draw do
-  devise_for :users, :skip => [:registrations]
+  devise_for :users, skip: [:registrations]
 
   namespace :admin do
     resources :mountains
     resources :roads
 
-    root to: "mountains#index"
+    root to: 'mountains#index'
   end
 
- root to: 'dashboard#index'
+  root to: 'dashboard#index'
 
- resources :mountains do
-  collection do
-    get 'forecast'
-  end 
- end
+  resources :mountains do
+    collection do
+      get 'forecast'
+    end
+  end
 
- resources :roads, only: [:index] do
-  collection do
-    get 'alert'
-    get 'images'
-    get 'speeds'
-  end 
- end 
-
+  resources :roads, only: [:index] do
+    collection do
+      get 'alert'
+      get 'images'
+      get 'speeds'
+    end
+  end
 end

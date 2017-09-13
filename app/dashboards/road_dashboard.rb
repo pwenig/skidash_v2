@@ -1,4 +1,4 @@
-require "administrate/base_dashboard"
+require 'administrate/base_dashboard'
 
 class RoadDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
@@ -9,7 +9,7 @@ class RoadDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
-    name: Field::String,
+    name: Field::String
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -17,23 +17,23 @@ class RoadDashboard < Administrate::BaseDashboard
   #
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
-  COLLECTION_ATTRIBUTES = [
-    :id,
-    :name,
+  COLLECTION_ATTRIBUTES = %i[
+    id
+    name
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
-  SHOW_PAGE_ATTRIBUTES = [
-    :id,
-    :name,
+  SHOW_PAGE_ATTRIBUTES = %i[
+    id
+    name
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :name,
+    :name
   ].freeze
 
   # Overwrite this method to customize how roads are displayed

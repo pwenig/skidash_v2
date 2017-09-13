@@ -1,5 +1,5 @@
+# Mountains Controller
 class MountainsController < ApplicationController
-
   include WeatherCondition
 
   def index
@@ -11,10 +11,11 @@ class MountainsController < ApplicationController
     weather_results = {}
     zipcode = params['mountain']
 
-    weather_results['forecast_response'] = WeatherCondition.get_weather('forecast', zipcode)
-    weather_results['conditions_response'] = WeatherCondition.get_weather('conditions', zipcode)
+    weather_results['forecast_response'] =
+      WeatherCondition.get_weather('forecast', zipcode)
+    weather_results['conditions_response'] =
+      WeatherCondition.get_weather('conditions', zipcode)
 
     render json: weather_results
-  end 
-
+  end
 end

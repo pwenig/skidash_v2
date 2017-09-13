@@ -1,0 +1,12 @@
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+    - lib/**/*.rake
+  Exclude:
+    - db/schema.rb
+    - db/migrate/**
+    - db/seeds.rb
+    - Gemfile
+    - config/initializers/wrap_parameters.rb
+    - config/puma.rb

@@ -1,42 +1,39 @@
 require 'spec_helper'
 require 'rails_helper'
 
-describe 'Traffic API' do 
+describe 'Traffic API' do
+  let(:road) { 'I-70' }
 
-  let(:road) {'I-70'}
-
-  it 'gets traffic alert message' do 
-    VCR.use_cassette('alert_messages', :record => :new_episodes) do 
-     @alerts = TrafficAlert.get_alerts(road) 
-    end 
+  it 'gets traffic alert message' do
+    VCR.use_cassette('alert_messages', record: :new_episodes) do
+      @alerts = TrafficAlert.get_alerts(road)
+    end
 
     expect(@alerts.present?).to be(true)
     expect(@alerts[0]['RoadName']).to include(road)
-  end 
+  end
 
-  it 'gets traffic images' do 
-    VCR.use_cassette('traffic_images', :record => :new_episodes) do 
+  it 'gets traffic images' do
+    VCR.use_cassette('traffic_images', record: :new_episodes) do
       @images = TrafficAlert.get_images(road)
-    end 
+    end
 
     expect(@images.present?).to be(true)
-    expect(@images.length > 0).to be(true)
-  end 
+    expect(!@images.empty?).to be(true)
+  end
 
-  it 'gets traffic speeds' do 
-    VCR.use_cassette('traffic_speeds', :record => :new_episodes) do 
+  it 'gets traffic speeds' do
+    VCR.use_cassette('traffic_speeds', record: :new_episodes) do
       @speeds = TrafficAlert.get_speeds(road)
-    end 
+    end
     expect(@speeds.present?).to be(true)
     expect(@speeds[0]['RoadName']).to include(road)
-  end 
+  end
 
   it 'gets road volume' do
-    VCR.use_cassette('traffic_volume', :record => :new_episodes) do
+    VCR.use_cassette('traffic_volume', record: :new_episodes) do
       @volume = TrafficAlert.get_road_volume
-    end 
+    end
     expect(@volume.present?).to be(true)
-
-  end 
-
-end 
+  end
+end

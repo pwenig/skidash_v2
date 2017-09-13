@@ -1,3 +1,3 @@
-class Road < ActiveRecord::Base 
-
-end 
+# Road Model
+class Road < ActiveRecord::Base
+end

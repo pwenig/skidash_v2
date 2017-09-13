@@ -1,4 +1,4 @@
-require "administrate/base_dashboard"
+require 'administrate/base_dashboard'
 
 class MountainDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
@@ -19,7 +19,7 @@ class MountainDashboard < Administrate::BaseDashboard
     mtn_image3: Field::String,
     base: Field::String,
     created_at: Field::DateTime,
-    updated_at: Field::DateTime,
+    updated_at: Field::DateTime
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -27,43 +27,43 @@ class MountainDashboard < Administrate::BaseDashboard
   #
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
-  COLLECTION_ATTRIBUTES = [
-    :id,
-    :name,
-    :zip_code,
-    :lifts_open,
+  COLLECTION_ATTRIBUTES = %i[
+    id
+    name
+    zip_code
+    lifts_open
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
-  SHOW_PAGE_ATTRIBUTES = [
-    :id,
-    :name,
-    :zip_code,
-    :lifts_open,
-    :runs_open,
-    :terrain_url,
-    :mtn_image1,
-    :mtn_image2,
-    :mtn_image3,
-    :base,
-    :created_at,
-    :updated_at,
+  SHOW_PAGE_ATTRIBUTES = %i[
+    id
+    name
+    zip_code
+    lifts_open
+    runs_open
+    terrain_url
+    mtn_image1
+    mtn_image2
+    mtn_image3
+    base
+    created_at
+    updated_at
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
-  FORM_ATTRIBUTES = [
-    :name,
-    :zip_code,
-    :lifts_open,
-    :runs_open,
-    :terrain_url,
-    :mtn_image1,
-    :mtn_image2,
-    :mtn_image3,
-    :base,
+  FORM_ATTRIBUTES = %i[
+    name
+    zip_code
+    lifts_open
+    runs_open
+    terrain_url
+    mtn_image1
+    mtn_image2
+    mtn_image3
+    base
   ].freeze
 
   # Overwrite this method to customize how mountains are displayed

@@ -8,10 +8,8 @@ module WeatherCondition
       else
         format_conditions(response)
       end
-      formatted_response
+      # formatted_response
     end
-
-    private
 
     def format_forecast(response)
       response['forecast']['txt_forecast']['forecastday'][0...4]

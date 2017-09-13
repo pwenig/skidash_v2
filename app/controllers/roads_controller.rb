@@ -1,6 +1,7 @@
 # Roads Controller
 class RoadsController < ApplicationController
   include TrafficAlert
+  include TrafficApi
 
   def index
     @roads = Road.all

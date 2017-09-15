@@ -15,6 +15,8 @@ module SkidashV2
     config.assets.precompile << /.*.(?:eot|svg|ttf|woff|woff2)$/
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
+    config.time_zone = 'Mountain Time (US & Canada)'
+    config.active_record.default_timezone = :local
     config.before_configuration do
       env_file = File.join(Rails.root, 'config', 'local_env.yml')
       if File.exist?(env_file)

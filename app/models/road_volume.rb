@@ -1,0 +1,2 @@
+class RoadVolume < ApplicationRecord
+end

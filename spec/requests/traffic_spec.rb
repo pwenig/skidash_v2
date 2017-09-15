@@ -32,7 +32,7 @@ describe 'Traffic API' do
 
   it 'gets road volume' do
     VCR.use_cassette('traffic_volume', record: :new_episodes) do
-      @volume = TrafficVolume.get_road_volume
+      @volume = TrafficVolume.get_road_volume('West')
     end
     expect(@volume.present?).to be(true)
   end

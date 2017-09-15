@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170908204538) do
+ActiveRecord::Schema.define(version: 20170915175028) do
 
   create_table "mountains", force: :cascade do |t|
     t.string "name"
@@ -22,6 +22,14 @@ ActiveRecord::Schema.define(version: 20170908204538) do
     t.string "mtn_image2"
     t.string "mtn_image3"
     t.string "base"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "road_volumes", force: :cascade do |t|
+    t.string "direction"
+    t.string "volume"
+    t.string "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

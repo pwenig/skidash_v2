@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :mountains
     resources :roads
+    resources :road_volumes
 
     root to: 'mountains#index'
   end

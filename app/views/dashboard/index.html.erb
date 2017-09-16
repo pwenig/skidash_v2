@@ -18,8 +18,20 @@
     
   <forecast data=forecast ng-if="display_forecast"></forecast>
 
+   <div class="road-volume-container" ng-show="show_volume">
+    <div class="row">
+      <section class="road-volume">
+          <h3>I-70 Road Volume</h3>
+          <%= line_chart [{name: 'West', data: @volumes_west}, {name: 'East', data: @volumes_east}], xtitle: "Time", ytitle: "Avg Road Volume" %>
+        </section>
+    </div>
+  </div>
+  
   <section class="traffic-header" ng-if="!traffic_alerts">CDOT Info not available</section>
   <travelalert alerts="traffic_alerts" roads="roads" speeds="road_speeds" selectroad="roadSelected" ng-if="traffic_alerts.length > 0"></travelalert>
+  
+ 
+
   <travelcamera images=traffic_images ng-if="traffic_images.length > 0"></travelcamera>
 
   <div class="footer-container">

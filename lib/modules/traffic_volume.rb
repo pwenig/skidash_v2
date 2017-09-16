@@ -2,7 +2,6 @@
 module TrafficVolume
   class << self
 
-    # WIP MORE TO DO HERE!
     def get_road_volume(direction)
       @speed_response = TrafficApi.road_speeds
       get_volume(@speed_response, direction)
@@ -33,8 +32,7 @@ module TrafficVolume
       end
       average['Direction'] = road_volume[0]['Direction']
       average['RoadVolume'] = total / road_volume.length
-      average['Time'] = road_volume[0]['DateTime'].to_datetime.strftime('%a %b %C %G %r')
-      average
+      average['Time'] = road_volume[0]['DateTime'].to_datetime.strftime('%a %b %e %Y %I:%M %p')
       save_road_volume(average)
     end
 

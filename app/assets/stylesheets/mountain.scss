@@ -80,7 +80,7 @@ img#radar {
   section.traffic-header{
     width: 90%;
     padding: 0;
-    height: 125px;
+    height: 110px;
   }
 
   section.traffic {
@@ -110,6 +110,15 @@ img#radar {
     }
 
   }
+}
+
+.road-volume-container{
+  width: 100%;
+
+  section.road-volume {
+    width: 90%;
+  }
+
 }
 
 .camera-container {

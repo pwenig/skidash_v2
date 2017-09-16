@@ -14,6 +14,8 @@
 //= require angular
 //= require angular-resource
 //= require angular-rails-templates
+//= require highcharts
+//= require chartkick
 //= require_tree ./modules
 //= require_tree ./services
 //= require_tree ./controllers

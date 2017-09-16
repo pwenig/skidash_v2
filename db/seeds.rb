@@ -1,3 +1,4 @@
+Mountain.destroy_all
 Mountain.create(:name => "Eldora", :zip_code => "80466", :mtn_image1 => "", :mtn_image3 => "", :terrain_url => "http://www.eldora.com/mountain.snow.php")
 Mountain.create(:name => "Steamboat", :zip_code => "80488", :mtn_image1 => "http://manage.hdrelay.com/snapshot/0d10f8f6-04bd-4c2c-8b05-3a595b25bb82?size=700x400&f=30000", :mtn_image2 => "http://manage.hdrelay.com/snapshot/ee489921-1004-45df-9634-0fa96543dabf?size=700x400&f=30000", :mtn_image3 => "http://manage.hdrelay.com/snapshot/56e0ec80-54e2-4979-a888-1013a47376bb?size=710x399&f=300000", :terrain_url => "http://www.steamboat.com/the-mountain/lifts-and-trails.aspx")
 Mountain.create(:name => "Breckenridge", :zip_code => "80424", :mtn_image1 => "http://common.snow.com/Mtncams/peak8base.jpg", :mtn_image2 => "http://common.snow.com/Mtncams/peak6vista.jpg", :mtn_image3 => "http://common.snow.com/mtncams/10milestation.jpg", :terrain_url => "http://www.breckenridge.com/mountain/terrain-status.aspx#/Lifts")
@@ -8,6 +9,7 @@ Mountain.create(:name => "Crested Butte", :zip_code => "81224", :mtn_image1 => "
 Mountain.create(:name => "A-Basin", :zip_code => "80435", :mtn_image1 => "http://arapahoebasin.com/ABasin/assets/images/webcams/webcam1/abasincam1.jpg", :mtn_image2 => "http://arapahoebasin.com/ABasin/assets/images/webcams/webcam5/abasincam5.jpg", :mtn_image3 => "http://arapahoebasin.com/ABasin/assets/images/webcams/webcam3/abasincam3.jpg", :terrain_url => "http://arapahoebasin.com/ABasin/snow-conditions/terrain.aspx")
 Mountain.create(:name => "Keystone", :zip_code => "80435", :mtn_image1 => "http://common.snow.com/Mtncams/summithouse.jpg", :mtn_image2 => "http://common.snow.com/mtncams/riverrun.jpg", :mtn_image3 => "http://common.snow.com/Mtncams/keystonegondola.jpg", :terrain_url => "http://www.keystoneresort.com/ski-and-snowboard/terrain-status.aspx#/Lifts")
 Mountain.create(:name => "Loveland", :zip_code => "80444", :mtn_image1 => "https://www.photosskiloveland.com/Single/chairone00001.jpg", :mtn_image2 => "https://www.photosskiloveland.com/valley/2/200001.jpg", :mtn_image3 => "https://www.photosskiloveland.com/basin/single/Basin00001.jpg", :terrain_url => "http://skiloveland.com/trail-lift-report/")
+Road.destroy_all
 Road.create(:name => "I-70")
 Road.create(:name => "US 40")
 Road.create(:name => "US 285")

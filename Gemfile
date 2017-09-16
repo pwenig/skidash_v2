@@ -22,6 +22,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+gem 'chartkick'
+gem 'highcharts-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop

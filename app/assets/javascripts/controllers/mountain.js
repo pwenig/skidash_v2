@@ -5,6 +5,8 @@ MountainCtrl.$inject = ['$scope', 'Mountain', 'Road'];
 
 function MountainCtrl ($scope, Mountain, Road) {
 
+  $scope.show_volume = true;
+
   Mountain.get().then(function(data) {
 
     $scope.mountains = data;
@@ -34,7 +36,11 @@ function MountainCtrl ($scope, Mountain, Road) {
   };
 
   $scope.roadSelected = function(road) {
-   
+    if(road['name'] == 'I-70') {
+      $scope.show_volume = true;
+    } else {
+      $scope.show_volume = false;
+    }
     $scope.get_alerts(road);
     $scope.get_images(road);
 

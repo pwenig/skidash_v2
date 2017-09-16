@@ -33,7 +33,7 @@ module TrafficVolume
       end
       average['Direction'] = road_volume[0]['Direction']
       average['RoadVolume'] = total / road_volume.length
-      average['Time'] = road_volume[0]['DateTime'].to_datetime.strftime('%a %b %e %m:%M %p')
+      average['Time'] = road_volume[0]['DateTime'].to_datetime.strftime('%a %b %e %I:%M %p')
       average
       save_road_volume(average)
     end

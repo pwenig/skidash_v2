@@ -5,7 +5,7 @@ class RoadVolume < ActiveRecord::Base
     def get_road_volume(direction)
       volumes = []
       # Only want today's volume
-      all_volume = RoadVolume.where("month = ? AND day = ?", Time.zone.now.month.to_s, Time.zone.now.day.to_s)
+      all_volume = RoadVolume.where("month = ? AND day = ?", Time.zone.now.month.to_s, Time.zone.now.day.to_s).sort_by(&:created_at)
       all_volume.each do |volume|
         if volume['direction'] == direction
           data = []

@@ -33,11 +33,13 @@ module TrafficVolume
       average['Direction'] = road_volume[0]['Direction']
       average['RoadVolume'] = total / road_volume.length
       average['Time'] = road_volume[0]['DateTime'].to_datetime.strftime('%a %b %e %Y %I:%M %p')
+      average['Day'] = Time.zone.now.day
+      average['Month'] = Time.zone.now.month
       save_road_volume(average)
     end
 
     def save_road_volume(average)
-      RoadVolume.create(direction: average['Direction'], volume: average['RoadVolume'], time: average['Time'])
+      RoadVolume.create(direction: average['Direction'], volume: average['RoadVolume'], time: average['Time'], month: average['Month'], day: average['Day'])
     end 
     
     def get_speeds(response)

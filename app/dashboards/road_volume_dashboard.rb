@@ -12,6 +12,8 @@ class RoadVolumeDashboard < Administrate::BaseDashboard
     direction: Field::String,
     volume: Field::String,
     time: Field::String,
+    month: Field::String,
+    day: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -26,6 +28,8 @@ class RoadVolumeDashboard < Administrate::BaseDashboard
     :direction,
     :volume,
     :time,
+    :month,
+    :day
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -35,6 +39,8 @@ class RoadVolumeDashboard < Administrate::BaseDashboard
     :direction,
     :volume,
     :time,
+    :month,
+    :day,
     :created_at,
     :updated_at,
   ].freeze
@@ -45,6 +51,8 @@ class RoadVolumeDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :direction,
     :volume,
+    :month,
+    :day,
     :time,
   ].freeze
 

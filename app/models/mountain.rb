@@ -1,3 +1,3 @@
 # Mountain Model
-class Mountain < ActiveRecord::Base
+class Mountain < ApplicationRecord
 end

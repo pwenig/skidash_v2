@@ -50,7 +50,7 @@ module TrafficAlert
             x['CameraId'] == '11130' || x['CameraId'] == '10134' ||
             x['CameraId'] == '10085' || x['CameraId'] == '10517' ||
             x['CameraId'] == '11118' || x['CameraId'] == '11202' ||
-            x['CameraId'] == '10139' || x['CameraId'] == '10883' 
+            x['CameraId'] == '10883' 
         }
       end
       selected_images

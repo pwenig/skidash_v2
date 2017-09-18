@@ -1,5 +1,5 @@
 # RoadVolume class
-class RoadVolume < ActiveRecord::Base
+class RoadVolume < ApplicationRecord
   class << self
     # Data for the graph
     def get_road_volume(direction)

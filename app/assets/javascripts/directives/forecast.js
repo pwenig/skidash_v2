@@ -3,7 +3,7 @@ angular.module('skidash')
 
   return {
     restrict: 'E',
-    scope: {data: '='},
+    scope: {data: '=', mountain: '='},
     templateUrl: 'forecast.html',
     link: function ($scope, element, attributes) {
 
@@ -13,6 +13,12 @@ angular.module('skidash')
         $scope.future_forecasts = $scope.data['forecast_response'];
 
       });
+
+      $scope.$watch('mountain', function() {
+        
+        $scope.mountain_image = $scope.mountain['mtn_image1']
+        
+      })
      
 
 

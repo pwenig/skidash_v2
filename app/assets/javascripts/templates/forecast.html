@@ -1,12 +1,19 @@
 <div class="current-condition-container">
   <section class="current-condition">
     <ul>
-      
       <li><img ng-src="{{current_forecast.icon_url}}"></li>
       <li>{{ current_forecast.weather }} {{ current_forecast.temp_f }}&#176</li>
       <li>Wind: {{current_forecast.wind_string }}</li>
       <li class="forecast-time">{{ current_forecast.observation_time }}</li>
     </ul>
+  </section>
+  <section class='mountain-image'>
+    <div ng-if="mountain_image != 'No Image'">
+      <img ng-src="{{mountain_image }}">
+    </div>
+    <div ng-if="mountain_image == 'No Image'">
+        <h3>No Mountain Image</h3>
+      </div>
   </section>
   </div>
 

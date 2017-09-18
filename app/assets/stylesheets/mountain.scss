@@ -38,7 +38,7 @@ img#radar {
       flex-wrap: wrap;
 
       .slow-segment {
-        width: 180px;
+        width: 193px;
         height: 180px;
         border-radius: 50%;
         margin: 30px;
@@ -54,15 +54,11 @@ img#radar {
 
         p {
           color: black;
-          padding: 8px;
+          font-size: 18px;
+          word-wrap: break-word;
+          margin: 14px;
+          padding-top: 13px;
         }
-
-        p.speed-direction {
-          font-size: 17px;
-          font-weight: 700;
-        }
-
-
       }
 
     }
@@ -164,13 +160,26 @@ img#radar {
     }
     li {
       font-size: 18px;
+      padding: 8px;
+      margin-right: 36px;
       p {
         font-size: 12px;
       }
     }
     padding: 0;
-    width: 70%;
+    width: 400px;
     min-height: 170px;
+    margin-right: 10px;
+  }
+
+  section.mountain-image {
+    width: 400px;
+    min-height: 170px;
+
+    img {
+      height: 200px;
+      width: 375px;
+    }
   }
 }
 
@@ -459,15 +468,8 @@ color: white;
           height: 250px;
 
           p {
-            color: black;
-            padding: 20px;
-          }
-  
-          p.speed-direction {
             font-size: 22px;
-            padding: 0;
           }
-
         }
       }
     }

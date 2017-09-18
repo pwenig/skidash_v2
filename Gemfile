@@ -25,7 +25,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'chartkick'
 gem 'highcharts-rails'
 gem 'unicorn'
-gem 'rack-timeout'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop

@@ -25,6 +25,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'chartkick'
 gem 'highcharts-rails'
 gem 'rack-timeout'
+gem 'scout_apm'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop
   # execution and get a debugger console

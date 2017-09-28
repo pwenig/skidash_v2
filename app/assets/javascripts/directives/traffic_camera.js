@@ -12,7 +12,6 @@ angular.module('skidash')
         if($scope.images) {
 
           $scope.images = $scope.images;
-          imagewatch();
 
         }
         

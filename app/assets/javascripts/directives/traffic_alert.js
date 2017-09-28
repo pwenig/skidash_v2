@@ -11,7 +11,6 @@ angular.module('skidash')
 
         if($scope.speeds) {
           $scope.road_speeds = $scope.speeds;
-          speedwatch();
         }
 
       });
@@ -20,7 +19,6 @@ angular.module('skidash')
         
         if( $scope.alerts) {
           $scope.alerts = $scope.alerts;
-          alertwatch();
         }
 
       });

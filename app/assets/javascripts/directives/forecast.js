@@ -11,7 +11,6 @@ angular.module('skidash')
        if( $scope.data ) {
         $scope.current_forecast = $scope.data['conditions_response'];
         $scope.future_forecasts = $scope.data['forecast_response'];
-        datawatch();
        }
        
 
@@ -20,7 +19,6 @@ angular.module('skidash')
       var mountainwatch = $scope.$watch('mountain', function() {
         if( $scope.mountain ) {
           $scope.mountain_image = $scope.mountain['mtn_image1']
-          mountainwatch();
         }
         
       })

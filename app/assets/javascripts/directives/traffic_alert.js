@@ -7,15 +7,21 @@ angular.module('skidash')
     templateUrl: 'travel_alert.html',
     link: function ($scope, element, attributes) {
 
-      $scope.$watch('speeds', function() {
+      var speedwatch = $scope.$watch('speeds', function() {
 
-        $scope.road_speeds = $scope.speeds;
+        if($scope.speeds) {
+          $scope.road_speeds = $scope.speeds;
+          speedwatch();
+        }
 
       });
 
-      $scope.$watch('alerts', function() {
+      var alertwatch = $scope.$watch('alerts', function() {
         
-        $scope.alerts = $scope.alerts;
+        if( $scope.alerts) {
+          $scope.alerts = $scope.alerts;
+          alertwatch();
+        }
 
       });
 

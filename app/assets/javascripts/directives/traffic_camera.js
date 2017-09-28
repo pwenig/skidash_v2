@@ -7,7 +7,14 @@ angular.module('skidash')
     templateUrl: 'traffic_camera.html',
     link: function ($scope, element, attributes) {
 
-      $scope.$watch('images', function() {
+      var imagewatch = $scope.$watch('images', function() {
+
+        if($scope.images) {
+
+          $scope.images = $scope.images;
+          imagewatch();
+
+        }
         
        });
 

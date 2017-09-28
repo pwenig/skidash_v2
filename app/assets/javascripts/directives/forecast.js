@@ -7,16 +7,21 @@ angular.module('skidash')
     templateUrl: 'forecast.html',
     link: function ($scope, element, attributes) {
 
-      $scope.$watch('data', function() {
-       
+     var datawatch = $scope.$watch('data', function() {
+       if( $scope.data ) {
         $scope.current_forecast = $scope.data['conditions_response'];
         $scope.future_forecasts = $scope.data['forecast_response'];
+        datawatch();
+       }
+       
 
       });
 
-      $scope.$watch('mountain', function() {
-        
-        $scope.mountain_image = $scope.mountain['mtn_image1']
+      var mountainwatch = $scope.$watch('mountain', function() {
+        if( $scope.mountain ) {
+          $scope.mountain_image = $scope.mountain['mtn_image1']
+          mountainwatch();
+        }
         
       })
      

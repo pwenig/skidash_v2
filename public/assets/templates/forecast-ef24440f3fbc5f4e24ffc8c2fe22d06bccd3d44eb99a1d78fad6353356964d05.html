@@ -1,0 +1,44 @@
+<div class="forecast-header-container">
+  <div class="row">
+    <section class="forecast-header">
+       <h3>Forecasts</h3>
+        <form name="mountainForm">
+          <select name="mountainSelect" id="mountainSelect" ng-model="selected_mountain" ng-change="mountain_selected()" ng-options="mountain.name for mountain in mountains">
+            <option value="">Select Mountain</option>
+          </select>
+        </form>
+    </section>
+  </div>
+</div>
+
+
+<div class="current-condition-container" ng-if='display_forecast'>
+  <section class="current-condition">
+    <ul>
+      <li><img ng-src="{{current_forecast.icon_url}}"></li>
+      <li>{{ current_forecast.weather }} {{ current_forecast.temp_f }}&#176</li>
+      <li>Wind: {{current_forecast.wind_string }}</li>
+      <li class="forecast-time">{{ current_forecast.observation_time }}</li>
+    </ul>
+  </section>
+  <section class='mountain-image'>
+    <div ng-if="mountain_image != 'No Image'">
+      <img  ng-src="{{mountain_image }}">
+    </div>
+    <div ng-if="mountain_image == 'No Image'">
+        <h3>No Mountain Image</h3>
+      </div>
+  </section>
+</div>
+
+<div class="forecast-container" ng-if='display_forecast'>
+  <div ng-repeat="forecast in future_forecasts">
+    <section class="forecast">
+      <ul>
+        <li><img ng-src="{{forecast.icon_url}}"></li>
+        <li><h3>{{ forecast.title }}</h3></li>
+        <li class="forecast">{{ forecast.fcttext }}</li>
+      </ul>
+    </section>
+  </div>
+</div>

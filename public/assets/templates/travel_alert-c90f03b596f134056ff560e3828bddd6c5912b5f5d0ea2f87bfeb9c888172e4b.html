@@ -1,0 +1,59 @@
+<div class="traffic-container">
+  <section class="traffic-header">
+    <h3>Traffic Alerts</h3>
+    <form name="alertForm">
+        <select name="roadSelect" id="roadSelect" ng-model="selected_road" ng-change="road_selected()" ng-options="road.name for road in roads track by road.name">
+          <option value="">Select Road</option>
+        </select>
+      </form>
+  </section>
+</div>
+
+<div class="speed-container" ng-if="selected_road.name == 'I-70' && road_speeds.length > 0 ">
+  <section class="speed-header">
+    <h3>I-70 Slow Sections</h3>
+    
+    <div class="slowdown-container">
+      <div ng-repeat="speed in road_speeds">
+          <div ng-class="checkspeed(speed)">
+            <p>{{ speed['CalculatedDate'] | date: 'shortTime' }}</p>
+            <p>{{ speed['AverageSpeed'] }}/mph</p>
+            <p>{{ speed['Direction'] }}: {{ speed['SegmentName']}}</p>
+          </div>
+          
+      </div>
+      <div ng-if="road_speeds.length == 0">No Data-- FIX THIS</div>
+    </div>
+
+  </section>
+</div>
+
+<div class="traffic-container">
+    <div ng-repeat="alert in traffic_alerts">
+      <section class="traffic">
+        <p class="title">{{alert['RoadName']}} {{alert['Title']}}</p>
+        <p class="title">{{alert['LocationDescription']}}</p>
+        <div ng-if="alert['Title'] != 'No Alerts'">
+          <button class="description" ng-click="active=!active">Show/Hide Message</button>
+          <p ng-class="{'active': active}">{{alert['Description']}}</p>
+          <p class="title">****</p>
+        </div>
+      </section>
+    </div>
+</div>
+
+<div class="camera-container">
+  <section class="camera-header">
+    <h3>Traffic Cameras</h3>
+  </section>
+</div>
+
+<div class="camera-container">
+  <div ng-repeat="image in traffic_images">
+      <section class="camera">
+        <h4>{{ image['CameraName']}}</h4>
+        <a href="{{'http://www.cotrip.org/' + image['ImageLocation']}}" target="_blank"><img class="camera" ng-src="{{'http://www.cotrip.org/' + image['ImageLocation']}}"></a>
+        <p>{{ image['ViewDescription']}}</p>
+      </section>
+  </div>
+</div>

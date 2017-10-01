@@ -54,6 +54,7 @@ angular.module('skidash')
         }
         $scope.get_alerts($scope.selected_road);
         $scope.get_images($scope.selected_road);
+        $scope.get_speeds($scope.selected_road);
 
       };
 

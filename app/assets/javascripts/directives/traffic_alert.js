@@ -12,6 +12,7 @@ angular.module('skidash')
         Road.get_traffic_speeds(road).then(function(data) {
     
           $scope.road_speeds = data;
+          console.log('SPEEDS', $scope.road_speeds)
     
         });
       };

@@ -377,32 +377,6 @@ font-size: 18px;
 margin-right: 20px;
 }
 
-@keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
-}
-
-
-
-body { margin: 0; }
-div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; float: left; }
-div#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 20s slidy infinite;
-}
 
 #alerts {
 min-height: 420px;
@@ -494,6 +468,14 @@ color: white;
   }
 
 
+  .forecast-header-container {
+   
+    section.forecast-header {
+      height: 160px;
+    }
+  }
+
+  
   .forecast-container {
     section.forecast {
       width: 800px;
@@ -597,10 +579,6 @@ color: white;
   height: 150px;
   margin-top: 24px;
 }
-// h1 {
-//   font-size: 60px;
-// }
-
 
 }
 

@@ -2,30 +2,18 @@
 module TrafficAlert
   class << self
     def get_alerts(road)
-      if @alert_response
-        get_ski_alerts(@alert_response, road)
-      else
-        @alert_response = TrafficApi.road_alerts
-        get_ski_alerts(@alert_response, road) if @alert_response
-      end
+      @alert_response = TrafficApi.road_alerts
+      get_ski_alerts(@alert_response, road) if @alert_response
     end
 
     def get_images(road)
-      if @image_response
-        get_ski_images(@image_response, road)
-      else
-        @image_response = TrafficApi.road_images
-        get_ski_images(@image_response, road) if @image_response
-      end
+      @image_response = TrafficApi.road_images
+      get_ski_images(@image_response, road) if @image_response
     end
 
     def get_speeds(road)
-      if @speed_response
-        get_ski_speeds(@speed_response, road)
-      else
-        @speed_response = TrafficApi.road_speeds
-        get_ski_speeds(@speed_response, road) if @speed_response
-      end
+      @speed_response = TrafficApi.road_speeds
+      get_ski_speeds(@speed_response, road) if @speed_response
     end
 
     private

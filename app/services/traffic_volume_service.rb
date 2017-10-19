@@ -1,5 +1,5 @@
-# Module for the CDOT road volume and calculations
-module TrafficVolume
+class TrafficVolumeService
+  include TrafficApi
   class << self
 
     def get_road_volume(direction)

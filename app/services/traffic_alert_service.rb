@@ -1,5 +1,6 @@
-# Module for the CDOT API alerts and speeds data
-module TrafficAlert
+class TrafficAlertService
+  include TrafficApi
+
   class << self
     def get_alerts(road)
       @alert_response = TrafficApi.road_alerts

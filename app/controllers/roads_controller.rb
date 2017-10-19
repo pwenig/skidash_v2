@@ -1,7 +1,5 @@
 # Roads Controller
 class RoadsController < ApplicationController
-  include TrafficAlert
-  include TrafficApi
 
   def index
     @roads = Road.all
@@ -9,14 +7,14 @@ class RoadsController < ApplicationController
   end
 
   def alert
-    render json: TrafficAlert.get_alerts(params['name'])
+    render json: TrafficAlertService.get_alerts(params['name'])
   end
 
   def images
-    render json: TrafficAlert.get_images(params['name'])
+    render json: TrafficAlertService.get_images(params['name'])
   end
 
   def speeds
-    render json: TrafficAlert.get_speeds(params['name'])
+    render json: TrafficAlertService.get_speeds(params['name'])
   end
 end

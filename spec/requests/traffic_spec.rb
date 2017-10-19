@@ -1,4 +1,3 @@
-require 'spec_helper'
 require 'rails_helper'
 
 describe 'Traffic API' do
@@ -6,7 +5,7 @@ describe 'Traffic API' do
 
   it 'gets traffic alert message' do
     VCR.use_cassette('alert_messages', record: :new_episodes) do
-      @alerts = TrafficAlert.get_alerts(road)
+      @alerts = TrafficAlertService.get_alerts(road)
     end
 
     expect(@alerts.present?).to be(true)
@@ -15,7 +14,7 @@ describe 'Traffic API' do
 
   it 'gets traffic images' do
     VCR.use_cassette('traffic_images', record: :new_episodes) do
-      @images = TrafficAlert.get_images(road)
+      @images = TrafficAlertService.get_images(road)
     end
 
     expect(@images.present?).to be(true)
@@ -24,7 +23,7 @@ describe 'Traffic API' do
 
   it 'gets traffic speeds' do
     VCR.use_cassette('traffic_speeds', record: :new_episodes) do
-      @speeds = TrafficAlert.get_speeds(road)
+      @speeds = TrafficAlertService.get_speeds(road)
     end
     expect(@speeds.present?).to be(true)
     expect(@speeds[0]['RoadName']).to include(road)
@@ -32,7 +31,7 @@ describe 'Traffic API' do
 
   it 'gets road volume' do
     VCR.use_cassette('traffic_volume', record: :new_episodes) do
-      @volume = TrafficVolume.get_road_volume('West')
+      @volume = TrafficVolumeService.get_road_volume('West')
     end
     expect(@volume.present?).to be(true)
   end

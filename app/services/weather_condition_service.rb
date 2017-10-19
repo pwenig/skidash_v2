@@ -1,6 +1,6 @@
-# Module for the Weather API
-module WeatherCondition
+class WeatherConditionService
   class << self
+
     def get_weather(type, zipcode)
       response = HTTParty.get("#{ENV['WEATHER_URL']}/#{type}/q/#{zipcode}.json")
       if type == 'forecast'
@@ -8,7 +8,6 @@ module WeatherCondition
       else
         format_conditions(response)
       end
-      # formatted_response
     end
 
     def format_forecast(response)
@@ -18,5 +17,7 @@ module WeatherCondition
     def format_conditions(response)
       response['current_observation']
     end
+
   end
+
 end

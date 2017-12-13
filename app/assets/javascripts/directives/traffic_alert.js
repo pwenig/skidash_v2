@@ -37,21 +37,21 @@ angular.module('skidash')
       Road.get().then(function(data) {
         
         $scope.roads = data;
-        $scope.road_default = $scope.roads[0];
-        $scope.selected_road = $scope.road_default;
-        $scope.get_alerts($scope.road_default);
-        $scope.get_images($scope.road_default);
-        $scope.get_speeds($scope.road_default);
+        // $scope.road_default = $scope.roads[0];
+        // $scope.selected_road = $scope.road_default;
+        // $scope.get_alerts($scope.road_default);
+        // $scope.get_images($scope.road_default);
+        // $scope.get_speeds($scope.road_default);
     
       });
 
       $scope.road_selected = function() {
         
-        if($scope.selected_road['name'] == 'I-70') {
-          $scope.show_volume = true;
-        } else {
-          $scope.show_volume = false;
-        }
+        // if($scope.selected_road['name'] == 'I-70') {
+        //   $scope.show_volume = true;
+        // } else {
+        //   $scope.show_volume = false;
+        // }
         $scope.get_alerts($scope.selected_road);
         $scope.get_images($scope.selected_road);
         $scope.get_speeds($scope.selected_road);

@@ -9,7 +9,7 @@
   </section>
 </div>
 
-<div class="speed-container" ng-if="selected_road.name == 'I-70' && road_speeds.length > 0 ">
+<div class="speed-container" ng-if="selected_road && selected_road.name == 'I-70' && road_speeds.length > 0 ">
   <section class="speed-header">
     <h3>I-70 Slow Sections</h3>
     
@@ -28,7 +28,7 @@
   </section>
 </div>
 
-<div class="traffic-container">
+<div class="traffic-container" ng-if="selected_road">
     <div ng-repeat="alert in traffic_alerts">
       <section class="traffic">
         <p class="title">{{alert['RoadName']}} {{alert['Title']}}</p>
@@ -42,13 +42,13 @@
     </div>
 </div>
 
-<div class="camera-container">
+<div class="camera-container" ng-if="selected_road">
   <section class="camera-header">
     <h3>Traffic Cameras</h3>
   </section>
 </div>
 
-<div class="camera-container">
+<div class="camera-container" ng-if="selected_road">
   <div ng-repeat="image in traffic_images">
       <section class="camera">
         <h4>{{ image['CameraName']}}</h4>
